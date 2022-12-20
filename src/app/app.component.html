@@ -1,0 +1,29 @@
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="home">
+      <i class="bi bi-pencil-square mr-3"></i>
+      <img src="../assets/freewrite-logo.PNG" width="150px">
+    </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="prompts">Prompts</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="views">Links</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>
+
+<nav class="navbar fixed-bottom navbar-dark bg-light text-right">
+  <div class="container">
+    <a class="navbar-brand copyright" href="#">Copyright © 2023 Freewrite Platform</a>
+  </div>
+</nav>
