@@ -1,11 +1,10 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 
-/*
 import jsPDF from 'jspdf';
 import * as pdfMake from 'pdfmake/build/pdfmake';
 import * as pdfFonts from 'pdfmake/build/vfs_fonts';
 (pdfMake as any).vfs = pdfFonts.pdfMake.vfs;
-import htmlToPdfmake from 'html-to-pdfmake'; */
+import htmlToPdfmake from 'html-to-pdfmake';
 
 @Component({
   selector: 'app-prompts',
@@ -19,26 +18,22 @@ export class PromptsComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  /*save() {
-    var blob = new Blob(["Welcome to Websparrow.org."],
-        { type: "text/plain;charset=utf-8" });
-    saveAs(blob, "static.txt");
-  }*/
-  /*@ViewChild('writing') pdfDoc: ElementRef;
+  @ViewChild('pdfDoc') pdfDoc!: ElementRef;
 
   downloadpdf () {
-    console.log("downloadpdf function");
+    console.log("downloadpdf");
     const doc = new jsPDF();
 
     const pdfDoc = this.pdfDoc.nativeElement;
 
-    var html = htmlToPdfmake(pdfDoc.innerHTML);
+    var html = htmlToPdfmake(pdfDoc.innerHTML + this.mywriting);
 
     const documentDefinition = { content: html };
-    pdfMake.createPdf(documentDefinition).download('Shaun-Teeshad-Resume.pdf')
-  }*/
+    pdfMake.createPdf(documentDefinition).download('story.pdf')
+  }
 
   prompt = ""
+  mywriting = ""
 
   allprompts = [
     "Your favorite childhood vacation.",

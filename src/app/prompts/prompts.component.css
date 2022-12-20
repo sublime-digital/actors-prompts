@@ -12,3 +12,7 @@ textarea:focus {
   background: none;
   color: black;
 }
+
+::placeholder {
+  color: black;
+}
