@@ -14,5 +14,5 @@ textarea:focus {
 }
 
 ::placeholder {
-  color: black;
+  color: darkslategrey;
 }
