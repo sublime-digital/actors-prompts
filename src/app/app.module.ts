@@ -6,12 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PromptsComponent } from './prompts/prompts.component';
 import { LinksComponent } from './links/links.component';
+import { ShowcaseComponent } from './showcase/showcase.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PromptsComponent,
-    LinksComponent
+    LinksComponent,
+    ShowcaseComponent
   ],
   imports: [
     BrowserModule,
