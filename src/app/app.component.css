@@ -1,0 +1,11 @@
+.subscribe-button {
+    color: white;
+    background-color: limegreen;
+    border: 5px solid white;
+    border-radius: 15px;
+}
+
+.settings {
+    position: absolute;
+    right: 20px;
+}
