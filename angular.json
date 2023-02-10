@@ -68,7 +68,7 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "freewrite:build:production"
+              "browserTarget": "freewrite:build:production",
             },
             "development": {
               "browserTarget": "freewrite:build:development"
