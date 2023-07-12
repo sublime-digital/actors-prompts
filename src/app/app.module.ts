@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { PromptsComponent } from './prompts/prompts.component';
 import { LinksComponent } from './links/links.component';
 import { ShowcaseComponent } from './showcase/showcase.component';
+import { BookclubComponent } from './bookclub/bookclub.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PromptsComponent,
     LinksComponent,
-    ShowcaseComponent
+    ShowcaseComponent,
+    BookclubComponent
   ],
   imports: [
     BrowserModule,
