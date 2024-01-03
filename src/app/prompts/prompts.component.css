@@ -16,3 +16,15 @@ textarea:focus {
 ::placeholder {
   color: darkslategrey;
 }
+
+.promptpicker {
+  padding: 50px;
+}
+
+#pdfDoc {
+  padding-top: 50px;
+}
+
+.writingbox {
+  max-height: 400px;
+}

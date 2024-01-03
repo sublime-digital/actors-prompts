@@ -5,6 +5,7 @@ import * as pdfMake from 'pdfmake/build/pdfmake';
 import * as pdfFonts from 'pdfmake/build/vfs_fonts';
 (pdfMake as any).vfs = pdfFonts.pdfMake.vfs;
 import htmlToPdfmake from 'html-to-pdfmake';
+import { Prompts } from './prompts';
 
 @Component({
   selector: 'app-prompts',
@@ -47,4 +48,14 @@ export class PromptsComponent implements OnInit {
   getNew() {
     this.prompt = this.allprompts[Math.floor(Math.random()*this.allprompts.length)];
   }
+
+  powers = ['Life', 'Work',
+  'Friends', 'Money', 'Travel', 'Childhood', 'Adulthood', 'Fiction', 'Pets'];
+
+model = new Prompts(18, 'Dr. IQ', this.powers[0], 'Chuck Overstreet');
+
+submitted = false;
+
+
+onSubmit() { this.submitted = true; }
 }
