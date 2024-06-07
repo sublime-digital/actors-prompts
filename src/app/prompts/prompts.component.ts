@@ -37,12 +37,12 @@ export class PromptsComponent implements OnInit {
   mywriting = ""
 
   allprompts = [
-    "Your favorite childhood vacation.",
-    "The last words of your novel are, “As night became day, he started to understand the truth.” Now, go write the rest.",
-    "Turn one of the last texts you sent into a story.",
-    "Add an original scene to the last movie you watched.",
-    "Two friends have a disagreement.",
-    "Write about your favorite teacher.",
+    "Retell the story of your favorite childhood vacation.",
+    "“As daylight became dusk, she began to understand the truth..” Now, go write the rest.",
+    "Turn the last text you sent into the first line of a story.",
+    "Recall the last TV show you watched and add an original next episode",
+    "Three siblings have a disagreement...",
+    "Write about a teacher who taught you something valuable.",
   ]
 
   getNew() {
