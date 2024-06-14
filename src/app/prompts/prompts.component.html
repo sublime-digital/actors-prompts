@@ -4,13 +4,13 @@
       <div class="form-group promptpicker">
         <p>
           <p>
-        <label for="power"><h3>Pick your Prompts</h3></label>
-        <h5>[This feature will be available in the near future]</h5>
+        <label for="power"><h3>Pick your Prompt</h3></label>
+        <h3>[This feature will be available in the near future]</h3>
         <select class="form-control" id="power" required>
           <option *ngFor="let pow of powers" [value]="pow">{{pow}}</option>
         </select>
         <p></p>
-        <button class="btn btn-primary" (click)="getNew()">New</button>
+        <button class="btn btn-primary" (click)="getNew()">New Prompt</button>
         &nbsp;<button class="btn btn-primary" (click)="downloadpdf()">Download</button>
       </div>
 
