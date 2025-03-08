@@ -37,12 +37,13 @@ export class PromptsComponent implements OnInit {
   mywriting = ""
 
   allprompts = [
-    "Retell the story of your favorite childhood vacation.",
-    "“As daylight became dusk, she began to understand the truth..” Now, go write the rest.",
-    "Turn the last text you sent into the first line of a story.",
-    "Recall the last TV show you watched and add an original next episode",
-    "Three siblings have a disagreement...",
-    "Write about a teacher who taught you something valuable.",
+    "What's your biggest act of self-love?",
+    "What are the first and last lines of your memoir?",
+    "What's a recent cherished memory you've lived?",
+    "Write three different versions of your life story in 3 years’ time",
+    "You’re deserted on a remote island alone... What's your escape plan?",
+    "You've been granted the opportunity to change one critical attribute of all humans on Earth... what are you altering?",
+    "Four friends set out on an expedition through the woods on a hot summer day…",
   ]
 
   getNew() {
